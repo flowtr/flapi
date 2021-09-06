@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "additionalProperties": true,
+  "properties": {
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "model": {
+            "type": "object",
+            "required": ["fields"],
+            "additionalProperties": false,
+            "properties": {
+              "fields": {
+                "type": "array",
+                "additionalProperties": true,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["id", "type", "displayName"],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "displayName": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "anyOf": [
+                        {
+                          "const": "string"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

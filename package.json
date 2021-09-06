@@ -1,0 +1,18 @@
+{
+	"name": "@flowtr/flapi",
+	"version": "0.0.1",
+	"type": "module",
+	"main": "src/index.js",
+	"description": "Flowtr API Generator",
+	"scripts": {
+		"start": "node ."
+	},
+	"dependencies": {
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"mongodb": "^4.1.1"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.13"
+	}
+}

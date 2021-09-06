@@ -1,0 +1,10 @@
+
+\.phpintel/
+vendor
+.env
+.DS_Store
+*.log*
+spec.json
+data
+node_modules
+dist
