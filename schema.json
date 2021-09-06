@@ -12,6 +12,49 @@
           "name": {
             "type": "string"
           },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["type"],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "anyOf": [
+                    {
+                      "const": "get_all"
+                    },
+                    {
+                      "const": "get"
+                    },
+                    {
+                      "const": "create"
+                    },
+                    {
+                      "const": "dellete"
+                    },
+                    {
+                      "const": "update"
+                    }
+                  ]
+                },
+                "auth": {
+                  "type": "object",
+                  "required": ["roles"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "roles": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "model": {
             "type": "object",
             "required": ["fields"],

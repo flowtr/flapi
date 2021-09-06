@@ -4,7 +4,7 @@ vendor
 .env
 .DS_Store
 *.log*
-spec.json
+flapi.json
 data
 node_modules
 dist
