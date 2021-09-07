@@ -1,0 +1,6 @@
+{
+  "watch": ["src", "flapi.json"],
+  "ext": "js,json",
+  "ignore": ["frontend"],
+  "exec": "pnpm run start"
+}

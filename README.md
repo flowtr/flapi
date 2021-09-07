@@ -1,7 +1,7 @@
 # Flowtr API Generator (flapi)
 
-This is a node.js app that generates apis using
-tailwindcss, mongodb and express.
+Flapi is a CMS made with modern web technologies such as
+Tailwind CSS, preact, MongoDB and Express.
 
 ## Getting Started
 

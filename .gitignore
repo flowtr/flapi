@@ -8,3 +8,5 @@ flapi.json
 data
 node_modules
 dist
+.vscode/sftp.json
+public/style.css

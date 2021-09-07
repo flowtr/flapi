@@ -12,6 +12,12 @@
           "name": {
             "type": "string"
           },
+          "displayName": {
+            "type": "string"
+          },
+          "mainField": {
+            "type": "string"
+          },
           "rules": {
             "type": "array",
             "items": {
@@ -66,8 +72,14 @@
                 "items": {
                   "type": "object",
                   "additionalProperties": false,
-                  "required": ["id", "type", "displayName"],
+                  "required": ["id", "type"],
                   "properties": {
+                    "required": {
+                      "type": "boolean"
+                    },
+                    "default": {
+                      "type": "string"
+                    },
                     "id": {
                       "type": "string"
                     },
@@ -78,7 +90,10 @@
                       "type": "string",
                       "anyOf": [
                         {
-                          "const": "string"
+                          "const": "text"
+                        },
+                        {
+                          "const": "image"
                         }
                       ]
                     }
